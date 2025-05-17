@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arbitrum Guestbook</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.0/dist/ethers.umd.min.js"></script>
+  <script src="./app.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen p-6">
+  <div class="max-w-2xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">📝 Arbitrum Guestbook</h1>
+
+    <form id="guestbookForm" class="bg-gray-800 p-6 rounded-lg shadow mb-8">
+      <input id="name" type="text" placeholder="Your name" class="w-full mb-4 px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      <textarea id="message" placeholder="Your message" class="w-full mb-4 px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-white font-semibold">Sign Guestbook</button>
+    </form>
+
+    <div id="entries" class="space-y-4"></div>
+  </div>
+</body>
+</html>
