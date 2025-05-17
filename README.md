@@ -55,21 +55,26 @@ contract Guestbook {
 
 
 
- **### How to Deploy**
+  ## How to Deploy
 **1. Clone the repo:**
 
-```git clone https://github.com/FavourWilson/Guestbook.git
+```
+git clone https://github.com/FavourWilson/Guestbook.git
 cd Guestbook
+```
 
 **2. Install dependencies:**
-``` npm install
-
+```
+npm install
+```
 **3. Compile the contract:**
-``` npx hardhat compile
-
+```
+npx hardhat compile
+```
 
 **4. Deploy to Arbitrum Sepolia:**
-``` npx hardhat run scripts/deploy.js --network arbitrumSepolia
-
+```
+npx hardhat run scripts/deploy.js --network arbitrumSepolia
+```
 
 
